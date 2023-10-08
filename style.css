@@ -1,0 +1,561 @@
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: grey; */
+}
+#navbar{
+  width: 90%;
+  margin: auto;
+    display: flex;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.logo{
+    font-size: 25px;
+    float: left;
+    width: 30%;
+}
+.nav{
+    float: right;
+    float: inline-end;
+    width: 60%;
+}
+.nav ul
+{
+    display:flex; 
+    list-style:none;
+    padding: 30px;
+    padding-left: 200px;
+    font-size: 18px;
+
+}
+.nav ul li{
+    padding-left: 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+#hero{
+    width: 95%;
+    margin: auto;
+}
+.wrap{
+    display: flex;
+    /* background-color: beige; */
+    padding: 30px;
+}
+.left{
+    padding-top: 50px;
+    width: 45%;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    background-color: blueviolet;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+}
+.btn:hover{
+    font-size: 25px;
+    transition: 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#feature{
+  width: 90%;
+  margin: auto;
+}
+.content{
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+.item{
+    text-align: center;
+}
+
+#course{
+  padding-top: 30px;
+  width: 95%;
+  margin: auto;
+    /* background-color: azure; */
+    font-size: 18px;
+    /* padding: 30px; */
+    padding-bottom: 70px;
+}
+#product{
+    transition: 0.3s;
+    width:90%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+    align-items: center;
+    margin: auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .button {
+    border-radius: 4px;
+    background-color: #1e25f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn-more{
+    width: 200px;
+  }
+  .btn-more a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+
+  #rate{
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+  }
+
+
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+  .allrate{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .crate{
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2) ;
+    text-align: center;
+  }
+  .crate img{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .crate:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+  footer{
+    width: 97%;
+    margin: auto;
+    background-color: #f44336;
+    color: #1a0303;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+ 
+  .allf{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .fmid a{
+    display: block;
+  }
+
+
+  #contact{
+    width: 90%;
+    margin: auto;
+    background-color: blueviolet;
+    padding: 10px;
+  }
+  /* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: rgb(172, 23, 217);
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+#blog{
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+}
+.allart{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.art{
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2) ;
+    text-align: center;
+}
+.art img{
+  width: 300px;
+  border-radius: 10%;
+}
+.art:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.btn1 {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: left;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn1:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+
+
+
+
+
+@media screen  and (max-width: 768px) {
+  #navbar{
+    display: block;
+  }
+  .logo{
+    width: 100%;
+  }
+  .nav{
+    width: 100%;
+    padding: 0%;
+  }
+  .nav ul{
+    padding: 0%;
+  }
+
+  #hero{
+    width: 100%;
+    display: block;
+  }
+  .wrap{
+    display: block;
+    margin: auto;
+  }
+  .left{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .right{
+    width: 100%;
+    margin: auto;
+  }
+  .right img{
+    width: 750px;
+  }
+  #feature{
+    width: 100%;
+    display: block;
+  }
+  #course{
+    padding-top: 30px;
+  width: 95%;
+  margin: auto;
+    /* background-color: azure; */
+    font-size: 18px;
+    /* padding: 30px; */
+    padding-bottom: 70px;
+  }
+  #product{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+ 
+  .allrate{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .allart{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  #footer{
+    width: 100%;
+    margin: auto;
+  }
+  .allf{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  #contact{
+    width: 90%;
+    margin: auto;
+    padding: 0%;
+  }
+}
+@media screen and (max-width:480px)
+{
+  h1{
+    font-size: 30px;
+    margin: auto;
+  }
+  #navbar{
+    display: block;
+  }
+  .logo{
+    width: 100%;
+  }
+  .nav{
+    width: 100%;
+  
+  }
+  .nav ul{
+    padding-left: -20px;
+  }
+
+  #hero{
+    width: 100%;
+    display: block;
+  }
+  .wrap{
+    display: block;
+    margin: auto;
+  }
+  .left{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .right{
+    width: 100%;
+    margin: auto;
+  }
+  .right img{
+    display: none;
+  }
+  #feature{
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  .content{
+    display: block;
+    width: 100%;
+  }
+  #product{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+  }
+  .allrate{
+    display: block;
+  }
+  .crate{
+    margin-bottom: 10px;
+  }
+  .allart{
+    display: block;
+  }
+  .art{
+    margin-bottom: 10px;
+  }
+  #footer{
+    width: 100%;
+    margin: auto;
+  }
+  .allf{
+    display: block;
+  }
+  #contact{
+    width: 90%;
+    margin: auto;
+    padding: 0%;
+  }
+}
