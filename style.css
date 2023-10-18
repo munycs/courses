@@ -537,6 +537,10 @@ input[type=submit]:hover {
   .allrate{
     display: block;
   }
+    .art img{
+    width: 80%;
+    margin: auto;
+  }
   .crate{
     margin-bottom: 10px;
   }
